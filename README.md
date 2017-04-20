@@ -1,0 +1,2 @@
+# mynews
+Scrap YC news
