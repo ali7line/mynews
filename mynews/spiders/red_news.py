@@ -33,7 +33,7 @@ class SomethingSpider(CrawlSpider):
         for id_ in id_list:
             l = ItemLoader(item=MyyItem(), response=response)
             l.add_xpath('news_id', id_)
-            xpath_header = '//div[@id="{}]"'.format(id_)
+            xpath_header = '//div[@id="{}"]'.format(id_)
             l.add_xpath('title', xpath_header + '//p[@class="title"]/a/text()')
             l.add_xpath('site', xpath_header + '//span[@class="domain"]/a/text()')
             l.add_xpath('link', xpath_header + '//p[@class="title"]/a/@href')
