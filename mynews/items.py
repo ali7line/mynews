@@ -11,6 +11,7 @@ class MyyItem(Item):
     author = Field()
     points = Field()
     rank = Field()
+    tags = Field()
     comments = Field()
     age = Field()
 
